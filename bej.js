@@ -17,17 +17,18 @@ const server = http.createServer((req,res)=> {
     }
     if(req.url==="/contact"){
 
-        return res.end("<h1>CONTACT ytjtujryjmryjmrhfmh</h1>");
+        return res.end("<h1>CONTACT </h1>");
     }
-    if(req.url==="/services"){
+    if(req.url==="/hello"){
 
-       return res.end("<h1>SERVICES </h1>");
+       return res.end("<h1>Hello World </h1>");
     }
     else{
        return res.end("<h1>404 PAGE NOT FOUND</h1>");
     }
-    
+   
 });
+
  server.listen(PORT,hostname,()=>{
     console.log(`Server is woring on http://${hostname}:${PORT})`);
  });
